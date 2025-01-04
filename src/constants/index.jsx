@@ -31,7 +31,7 @@ export const NAVIGATION_LINKS = [
 ];
 
 export const HERO = {
-  name: "CARL FRANK",
+  name: "HRIDOY SHIL",
   greet: "Hello there! 👋🏻",
   description:
     "I am a passionate frontend developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences for over a decade.",
@@ -152,13 +152,13 @@ export const EXPERIENCES = [
 ];
 
 export const EDUCATION = [
-  {
-    degree: "Master of Science in Computer Science",
-    institution: "Stanford University",
-    duration: "September 2012 - June 2014",
-    description:
-      "Specialized in Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications through advanced interactive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.",
-  },
+  // {
+  //   degree: "Master of Science in Computer Science",
+  //   institution: "Stanford University",
+  //   duration: "September 2012 - June 2014",
+  //   description:
+  //     "Specialized in Human-Computer Interaction and Software Engineering. Completed a thesis on enhancing user experience in web applications through advanced interactive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.",
+  // },
   {
     degree: "Bachelor of Science in Information Technology",
     institution: "University of California, Berkeley",
