@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe";
+import ContactForm from "./components/ContactForm";
 import Education from "./components/Education";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -12,6 +13,7 @@ function App() {
       <Projects />
       <Skill />
       <Education />
+      <ContactForm/>
     </div>
   );
 }
