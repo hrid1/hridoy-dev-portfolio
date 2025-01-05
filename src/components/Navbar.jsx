@@ -18,15 +18,16 @@ const Navbar = () => {
     }
     setIsMenuOpen(false);
   };
+
   return (
     <div>
       <nav className="fixed z-20 inset-x-0 top-0 ">
         {/* desktop menu */}
         <div className="mx-auto hidden max items-center justify- rounded-lg border-b-2 border-stone-50/30 bg-black/20 py-3  backdrop-blur-lg lg:flex justify-between px-2">
           <div className="flex justify-between gap-6">
-            <a href="#">
+            <Link to="/">
               <img src={logo} width={150} alt="logo" />
-            </a>
+            </Link>
           </div>
           {/* <div>
             <ul className="flex items-center gap-6 group">
@@ -62,9 +63,15 @@ const Navbar = () => {
           </div>
 
           <div>
-            <button className="font-medium px-4 py-2 bg-white text-black rounded-lg">
+            <a
+              href="https://docs.google.com/document/d/1iffJJs6aYtAwBeeIPMse1pq10blzldbkyq5HIOQqhFo/export?format=pdf"
+              className="font-medium px-4 py-2 bg-white text-black rounded-lg"
+              // target="_blank"
+              rel="noopener noreferrer"
+              download="Hridoy_ShilCV.pdf"
+            >
               Download CV
-            </button>
+            </a>
           </div>
         </div>
         {/* mobile menu */}
@@ -76,9 +83,12 @@ const Navbar = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <button className="px-2 py-1 font-medium text-sm  bg-white text-black rounded-lg">
+              <a
+                href="https://docs.google.com/document/d/1iffJJs6aYtAwBeeIPMse1pq10blzldbkyq5HIOQqhFo/export?format=pdf"
+                className="px-2 py-1 font-medium text-sm  bg-white text-black rounded-lg"
+              >
                 Download CV
-              </button>
+              </a>
               <button
                 className="focus:outline-none lg:hidden "
                 onClick={toggleMenu}

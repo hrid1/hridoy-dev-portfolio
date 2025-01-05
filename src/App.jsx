@@ -1,6 +1,7 @@
 import AboutMe from "./components/AboutMe";
 import ContactForm from "./components/ContactForm";
 import Education from "./components/Education";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skill from "./components/Skill";
@@ -13,7 +14,7 @@ function App() {
       <Projects />
       <Skill />
       <Education />
-      <ContactForm/>
+      <ContactForm />
     </div>
   );
 }

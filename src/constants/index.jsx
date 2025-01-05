@@ -5,6 +5,7 @@ import {
   FaFacebook,
   FaDiscord,
   FaInstagram,
+  FaWhatsapp,
 } from "react-icons/fa6";
 
 import projectImage1 from "../assets/project1.jpeg";
@@ -22,10 +23,10 @@ import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 
 export const NAVIGATION_LINKS = [
-  { label: "Projects", href: "#projects" },
   { label: "Bio", href: "#bio" },
+  { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
-  { label: "Work Experience", href: "#work" },
+  // { label: "Work Experience", href: "#work" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
@@ -85,6 +86,82 @@ export const PROJECTS = [
       "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
     image: projectImage6,
     githubLink: "https://github.com/user/chat-application",
+  },
+];
+
+export const MYPROJECTS = [
+  {
+    id: 1,
+    name: "Personal Portfolio",
+    info: "A personal portfolio website showcasing my work, skills, and contact information. Built with modern web tools for a responsive design.",
+    description: `
+      The Personal Portfolio website is built with React and Tailwind CSS. It highlights my skills, previous projects, and contact information.
+      The design is simple yet elegant, ensuring ease of navigation. The website is fully responsive and works on various screen sizes. 
+      It's a one-page website with sections for about, skills, projects, and contact information. The smooth scrolling and animations enhance user experience.
+      I used Tailwind CSS for fast styling, ensuring a mobile-friendly design and clean layout.
+      The project is hosted on GitHub Pages, and the source code is available on GitHub for reference.
+    `,
+    features: [
+      "Responsive design using Tailwind CSS",
+      "Smooth scrolling and section animations",
+      "Showcase of skills, projects, and contact details",
+    ],
+    image: projectImage1, // Replace with your image variable or URL
+    githubLink: "https://github.com/user/personal-portfolio",
+    liveLink: "https://your-portfolio.com",
+    technology: ["React", "Tailwind CSS", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    id: 2,
+    name: "E-commerce Website",
+    info: "A fully functional e-commerce website developed with React, Node.js, and MongoDB. Includes product listings, shopping cart, and secure payment.",
+    description: `
+      This E-commerce website was built using React, Node.js, and MongoDB. It features product listings, user authentication, and a secure payment system.
+      The shopping cart functionality allows users to add, update, and remove products. Users can create accounts, log in, and securely make purchases.
+      MongoDB is used to store user data, product details, and orders. The front-end is designed using React for a smooth, dynamic experience.
+      The website is responsive and optimized for various devices. I integrated Stripe for payment processing and used Redux for state management.
+      It's a fully functioning web app that can be expanded with more features like admin panel, product reviews, and ratings.
+    `,
+    features: [
+      "Product listing and cart management",
+      "User authentication and secure checkout",
+      "Integrated Stripe payment system",
+      "State management using Redux",
+    ],
+    image: projectImage2, // Replace with your image variable or URL
+    githubLink: "https://github.com/user/e-commerce-website",
+    liveLink: "https://your-e-commerce-site.com",
+    technology: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Stripe",
+      "Redux",
+      "JavaScript",
+      "CSS",
+    ],
+  },
+  {
+    id: 3,
+    name: "Task Manager App",
+    info: "A task management app built with React and Firebase for real-time data syncing and user authentication. Allows creating and managing tasks.",
+    description: `
+      The Task Manager App is a React-based web application that allows users to create, update, delete, and categorize tasks.
+      It uses Firebase for real-time data synchronization and user authentication. Users can sign up, log in, and store their tasks securely.
+      Tasks can be categorized by priority (low, medium, high) and are displayed in a neat list format. The app provides features such as task search, filtering, and sorting.
+      The UI is intuitive and designed with Tailwind CSS for responsiveness and ease of use. The app provides real-time updates as tasks are modified by users.
+      This project demonstrates my ability to integrate Firebase and React to build dynamic, interactive applications.
+    `,
+    features: [
+      "Real-time data sync with Firebase",
+      "User authentication with Firebase",
+      "Task categorization by priority",
+      "Task search, filtering, and sorting features",
+    ],
+    image: projectImage3, // Replace with your image variable or URL
+    githubLink: "https://github.com/user/task-manager-app",
+    liveLink: "https://your-task-manager-app.com",
+    technology: ["React", "Firebase", "Tailwind CSS", "JavaScript", "HTML"],
   },
 ];
 
@@ -170,16 +247,20 @@ export const EDUCATION = [
 
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "https://x.com/",
+    href: "https://facebook.com/",
     icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
   },
   {
     href: "https://x.com/",
     icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
   },
+  // {
+  //   href: "https://x.com/",
+  //   icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
+  // },
   {
-    href: "https://x.com/",
-    icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
+    href: "https://wa.me/8801756523894",
+    icon: <FaWhatsapp fontSize={25} className="hover:opacity-80" />,
   },
   {
     href: "https://x.com/",

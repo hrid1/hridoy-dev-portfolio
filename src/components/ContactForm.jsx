@@ -20,7 +20,6 @@ const ContactForm = () => {
       [name]: value,
     });
   };
-
   const validate = () => {
     let errors = {};
     if (!formData.name) errors.name = "Name is required";
@@ -66,7 +65,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="p-4 lg:w-3/4 mx-auto" id="contact">
+    <div className="p-4 pt-8 lg:w-3/4 mx-auto" id="contact">
       <Toaster />
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
         Let&apos;s Connect
